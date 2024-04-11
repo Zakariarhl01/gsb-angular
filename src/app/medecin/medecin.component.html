@@ -1,0 +1,6 @@
+<h2>Medecin: {{medecin.nom}}  {{medecin.prenom}}</h2>
+<p *ngIf="!medecin.specialitecomplementaire" >Specialitée: Généraliste</p>
+<p *ngIf="medecin.specialitecomplementaire" >Specialitée: {{medecin.specialitecomplementaire}}</p>
+<p>Numero: {{medecin.tel}}</p>
+<p>Adresse: {{medecin.adresse}}</p>
+<button (click)="onViewMedecin()">Détails</button>

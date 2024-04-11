@@ -1,0 +1,10 @@
+<div *ngFor="let unMedecin of unMedecin$ | async">
+    <h1>Visite du Medecin {{unMedecin.nom}} {{unMedecin.prenom}}</h1>
+    <button (click)="goToAjoutRapport(unMedecin.id)">Ajouter un Rapport</button>
+    <app-rapport *ngFor="let unRapport of unRapport$ |async" [rapport]="unRapport"></app-rapport>
+    <app-offrir *ngFor="let uneOffre of uneOffre$ |async" [offrir]="uneOffre"></app-offrir>
+
+</div>
+<div class="button-container">
+<button routerLink="/medecin">Retour à la liste</button>
+</div>

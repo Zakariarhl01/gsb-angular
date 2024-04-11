@@ -1,0 +1,14 @@
+<div>
+    <h2>Ajout de Rapport</h2>
+    <div class="col-lg-4 offset-md-4 mb-3 mt-3">
+        <label for="date" class="form-label">Date:</label>
+        <input type="text" class="form-control" id="date" placeholder="Saisir la date (yyyy-mm-dd)" name="date" required="required" [(ngModel)]="date">
+        <label for="motif" class="form-label">Motif:</label>
+        <input type="text" class="form-control" id="motif" placeholder="Saisir votre motif" name="motif" required="required"[(ngModel)]="motif">
+        <label for="bilan" class="form-label">Bilan:</label>
+        <input type="text" class="form-control" id="bilan" placeholder="Saisir le bilan" name="bilan" required="required"[(ngModel)]="bilan">
+        <label for="visiteur" class="form-label">ID du Visiteur:</label>
+        <input type="text" class="form-control" id="visiteur" placeholder="Saisir l'ID du visiteur" name="visiteur" required="required"[(ngModel)]="idVisiteur">
+    </div>
+    <button class="btn-valider" (click)="onSubmit()">Valider</button>
+</div>

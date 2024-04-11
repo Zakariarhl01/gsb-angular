@@ -1,0 +1,47 @@
+/* Style the container */
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the heading for the medication name */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style the subheadings for ID and Family */
+h2 {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Style the paragraphs for composition, effects, and contraindications */
+p {
+    margin-bottom: 12px;
+}
+
+/* Style the "..." in the effects paragraph */
+p span {
+    font-weight: bold;
+    color: #007bff; 
+}
+
+button {
+    display: inline-block; /* Ensure the button is inline-block for centering */
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* Change the cursor to a pointer on button hover for better UX */
+button:hover {
+    background-color: #0056b3; 
+}

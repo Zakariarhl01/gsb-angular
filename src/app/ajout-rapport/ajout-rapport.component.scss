@@ -1,0 +1,68 @@
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-label {
+    margin-bottom: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Styles pour le bouton Valider */
+.btn-valider {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de la souris */
+    font-size: 16px; /* Taille de police */
+  }
+  
+  /* Effet de survol */
+  .btn-valider:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+  }
+  
+  /* Effet de clic */
+  .btn-valider:active {
+    background-color: #3e8e41; /* Couleur de fond lors du clic */
+  }

@@ -1,0 +1,12 @@
+<header>
+    <nav>
+    <a routerLink="/visiteur" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">Visiteur</a>
+    <a routerLink="/medicament" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">Médicament</a>
+    <a routerLink="/medecin" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">Medecin</a>
+    <a routerLink="" routerLinkActive="active" 
+    [routerLinkActiveOptions]="{ exact: true }">{{ getStatusAuth() }}</a>
+    </nav>
+</header>

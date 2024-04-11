@@ -1,0 +1,20 @@
+<h1>Les Visiteurs</h1>
+<ul>
+    <table class="table table-condensed">
+        <thead title="entetetabvisiteur">
+            <tr>
+              <th>ID</th>
+              <th>LOGIN</th>
+              <th>NOM</th>
+              <th>PRENOM</th>
+              <th>ADRESSE</th>
+              <th>CP</th>
+              <th>VILLE</th>
+            </tr>
+        </thead>
+        <app-visiteur class="tablerow" *ngFor="let unVisiteur of visiteur$ |async" [visiteur]="unVisiteur"></app-visiteur>
+    </table>
+    
+
+</ul>
+   

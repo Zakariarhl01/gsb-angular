@@ -1,0 +1,11 @@
+<div *ngFor="let unMedicament of unMedicament$ | async">
+    <h1>Médicament : {{ unMedicament.nomCommercial }}</h1>
+    <h2>Identifiant : {{ unMedicament.id }}</h2>
+    <h2>Famille : {{ unMedicament.idFamille }}</h2>
+    <p>Composition : {{ unMedicament.composition }}</p>
+    <p>Effet : {{ unMedicament.effets }}<span>...</span></p>
+    <p>Contre indication : {{ unMedicament.contreIndications }}</p>
+</div>
+<div class="button-container">
+    <button routerLink="/medicament">Retour à la liste</button>
+</div>
