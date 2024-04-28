@@ -23,6 +23,7 @@ import { RapportComponent } from './rapport/rapport.component';
 import { Rapportservice } from './services/rapport.service';
 import { OffrirComponent } from './offrir/offrir.component';
 import { AjoutRapportComponent } from './ajout-rapport/ajout-rapport.component';
+import { SuppRapportComponent } from './supp-rapport/supp-rapport.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AjoutRapportComponent } from './ajout-rapport/ajout-rapport.component';
     VisiteurListComponent,
     RapportComponent,
     OffrirComponent,
-    AjoutRapportComponent
+    AjoutRapportComponent,
+    SuppRapportComponent
   ],
   imports: [
     BrowserModule,

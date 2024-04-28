@@ -19,15 +19,17 @@ export class AjoutRapportComponent implements OnInit{
   bilan!: string;
   idVisiteur!: string;
   id!: string;
+  messageConfirmation: string = '';
 
-  constructor(private medecinService:MedecinServices, private route: ActivatedRoute, private rapportService:Rapportservice) {}
+  constructor(private medecinService: MedecinServices, private route: ActivatedRoute, private rapportService: Rapportservice) {}
+
 
   ngOnInit(): void {
     const id =+ this.route.snapshot.params['id'];
     this.unMedecin$ = this.medecinService.getMedecinById(+id);
     
     const idRapport = +this.route.snapshot.params['id'];
-    this.unRapport$ = this.rapportService.getRapportById(+idRapport);
+    this.unRapport$ = this.rapportService.getRapportByIdMedecin(+idRapport);
   }
 
   onSubmit() {
@@ -35,16 +37,28 @@ export class AjoutRapportComponent implements OnInit{
     console.log(this.motif);
     console.log(this.bilan);
     console.log(this.idVisiteur);
-    const id: string = this.route.snapshot.params['idMedecin'];
-    console.log(id);
+    const idMedecin: string = this.route.snapshot.params['idMedecin'];
+    console.log(idMedecin);
     
     this.rapportService.insertRapportById(
-      this.date,
-      this.motif,
-      this.bilan,
-      this.idVisiteur,
-      id
+        this.date,
+        this.motif,
+        this.bilan,
+        this.idVisiteur,
+        idMedecin
+      ).subscribe(response => {
+        console.log('Rapport inséré avec succès', response);
+        this.messageConfirmation = 'Le rapport a bien été enregistré.';
+    }, error => {
+        console.error('Erreur lors de l\'insertion du rapport', error)
+        this.messageConfirmation = 'Une erreur est survenue, le rapport n\'a pas été enregistré.';
+    });
+    setTimeout( 
+      () => { 
+        this.messageConfirmation = ""; 
+      }, 2000 
     );
-  }
+}
 
 }
+

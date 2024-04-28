@@ -1,0 +1,22 @@
+/* Style de base pour le bouton */
+.btn-valider {
+    background-color: #ff4136; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    border: none; /* Suppression du bord */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de la souris */
+    font-size: 16px; /* Taille de la police */
+}
+
+/* Style au survol du bouton */
+.btn-valider:hover {
+    background-color: #dc2f26; /* Changement de couleur au survol */
+}
+
+/* Style pour le paragraphe de confirmation */
+.message {
+    margin-top: 10px; /* Espacement en haut */
+    font-size: 14px; /* Taille de la police */
+    color: #555; /* Couleur du texte */
+}

@@ -25,7 +25,7 @@ export class MedecinSeulComponent implements OnInit{
     this.unMedecin$ = this.medecinService.getMedecinById(+id);
     
     const idRapport = +this.route.snapshot.params['id'];
-    this.unRapport$ = this.rapportService.getRapportById(+idRapport);
+    this.unRapport$ = this.rapportService.getRapportByIdMedecin(+idRapport);
 
     // const idOffrir = +this.route.snapshot.params['idRapport'];
     // this.uneOffre$ = this.offresService.getOffrirByIdRapport(+idOffrir);
@@ -34,4 +34,5 @@ export class MedecinSeulComponent implements OnInit{
   goToAjoutRapport(idMedecin: string) {
     this.router.navigateByUrl(`ajout-rapport/${idMedecin}`);
   }
+
 }

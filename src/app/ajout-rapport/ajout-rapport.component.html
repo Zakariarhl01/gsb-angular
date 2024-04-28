@@ -11,4 +11,5 @@
         <input type="text" class="form-control" id="visiteur" placeholder="Saisir l'ID du visiteur" name="visiteur" required="required"[(ngModel)]="idVisiteur">
     </div>
     <button class="btn-valider" (click)="onSubmit()">Valider</button>
+    <p *ngIf="messageConfirmation" class="message">{{ messageConfirmation }}</p>
 </div>
